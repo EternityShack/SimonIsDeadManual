@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keep Talking and Nobody Explodes Example Manual Page</title>
+    <meta name="viewport" content="initial-scale=1"> 
+	<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="section">
+    <div class="page page-bg-01">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+			<span class="page-header-section-title">Simon's Dead</span>
+		</div>
+        <div class="page-content">
+    	    <img src="img/simondead.png" class="diagram">
+            <h2>On the Subject of Simon's Dead</h2>
+            <p class="flavour-text">
+					Sad that Simon died? You're going to change your mind after solving this module!
+			</p>
+			
+			<p class="appendix-reference">
+				See Appendix A for indicator identification reference.<br />
+				See Appendix B for battery identification reference.<br />
+				See Appendix C for port identification reference.<br />
+			</p>
+			
+			<ul>
+			<li>There are eight buttons on this module, and there are 12 stages. </li>
+			<li><strong>YOU</strong> have to determine the colors that are flashing.</li>
+			<li>To defuse the module, see below for "seed instructions"</li>
+			<!-- Here are some examples of tables that we use in the manual that you can use if it makes sense -->
+			<!-- Wires table -->
+			</ul>
+			<h2>Seed Instructions:</h2>
+			<table>
+				<tbody>
+					<tr>
+						<td><strong><em>Step 1</em></strong><br>
+						• Start with the bomb's serial number.<br>
+						• If the bomb has 2 or more PS/2 ports, multiply every numeric value on the serial number by 2. Otherwise, add 5 to every numeric value on the serial number<br>
+						• If a number goes past 9, subtract 10.<br>
+						<strong><em>Step 2</em></strong><br>
+						• For each indicator on the bomb that has a matching letter on the serial number (x), if the indicator is lit, add x to the letter of the serial number. If the indicator is unlit, subtract x to the letter of the serial number. (See the table below for help)<br>
+						• Otherwise, for each port name that has a matching letter on the serial number (y), multiply y to the letter. (See the table below for help)<br>
+						• Otherwise, if there's one or more empty port plates, add 1 to every letter on the serial number. (See the table below for help)<br>
+						• Otherwise, subtract 1 to every letter on the serial number. (See the table below for help)<br>
+						<strong><em>Step 3</em></strong><br>
+						• Convert every letter to a number. This is now your base seed. To get your final seed, follow the rules below.<br>
+						• If a value on the seed matches a value (numeric or lettered) on the original serial number, add the digits of the seed, and that number is n. Otherwise, n is now the first digit of the seed. (see "defining n" for help.)<br>
+						• If a value on the seed is equal to the number of indicators, n is the number of indicators. If there are more lit than unlit indicators, multiply n by 2. Otherwise, if there are more unlit than lit indicators, subtract n by 2. Otherwise, if there are equal lit and unlit indicators, leave n as is. If there are no indicators, n is 5. If n is greater than 9, or less than 0, add or subtract 10 until n is 0-9.<br>
+						• If a value on the seed is equal to the number of ports, n is the number of port plates. If there's an empty port plate, n is multiplied by 4, and use the least significant digit. Otherwise, if there are no port plates, n is the last digit of the seed.<br>
+						• n is equal to the number of modules on the bomb, excluding needy modules.<br>
+						• n is equal to the last digit of the seed squared. If n is one digit, add a 0 to the beginning. Instead of one digit this time, n will be 2 digits.</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>Now, your seed should be a 12 digit number. See the "result instructions".</h3>
+			<br>
+			<br>
+        </div>
+		<div class="page-footer relative-footer">Page 1 of 2</div>
+    </div>
+	<div class ="page page-bg-02">
+		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes</span>
+			<span class="page-header-section-title">Simon's Dead</span>
+		</div>
+		<div class="page-content">
+		<h2>Alphabet Math</h2>
+		<p>
+						Every letter in the alphabet has an assigned number.<br>
+						The letter A is equal to 1, and the letter Z is equal to 26.<br>
+						If your calculated number is lower than 1, or greater than 26, add or subtract 26 until you get a number 1-26.<br>
+						Use the least significant digit for doing the steps above.
+						I have provided the letters and numbers for you:<br>
+		</p>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+						A = 1 | 
+						B = 2 | 
+						C = 3 | 
+						D = 4 | 
+						E = 5 | 
+						F = 6 | 
+						G = 7 | 
+						H = 8 | 
+						I = 9 | 
+						J = 10 | 
+						K = 11 | 
+						L = 12 | 
+						M = 13 | 
+						N = 14 | 
+						O = 15 | 
+						P = 16 | 
+						Q = 17 | 
+						R = 18 | 
+						S = 19 | 
+						T = 20 | 
+						U = 21 | 
+						V = 22 | 
+						W = 23 | 
+						X = 24 | 
+						Y = 25 | 
+						Z = 26 | 
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<h2>Defining "n"</h2>
+		<p>
+			"n" is the last position of the seed plus 1. If my seed was 756432, n would be 7, because there are 6 positions, and n is the 7th. <br>
+			When n is assgined a new number, it's not the position, it's the label for that position.<br>
+			For example: My seed is 231345, and n is 6, my new seed is 2313456. Value n is 7, so my new seed is 23134567, and so on.
+		</p>
+		<h2>Result instructions</h2>
+		<p>
+			Congratulations, you have your seed!<br>
+			s will be the position number for the seed.<br>
+			For the first digit, s is 1, and for the last digit, s is 12.<br>
+			Multiply the sth position by s, and use the least significant digit.<br>
+			To find what buttons to press, convert the numbers to letters using the chart in "Alphabet Math"<br>
+			Starting with one letter at a time, use the chart below to determine what new button to press.<br>
+			<strong>Just like the original Simon Says, you have to input the button along with the buttons from the previous stages.</strong><br>
+		</p>
+		<img src="img/buttonchart.png" width="536" height="279">
+		</div>
+		<div class="page-footer relative-footer">Page 2 of 2</div>
+    </div>
+</body></html>
